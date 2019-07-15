@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>The Starbuzz Bean Machine</title>
+  </head>
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="POST">
+      <p>Viberet coffee:
+        <select name="beans">
+          <option value="Smes">Home smes</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Gvatamala">Gvatamala</option>
+          <option value="Kenia">Kenia</option>
+        </select>
+        <p>Type: <br />
+
+          <input type="radio" name="beantype" checked="checked" value="Zerno" />Coffee v zerno <br />
+          <input type="radio" name="beantype" value="Molotoe" />Molotoe coffee <br />
+
+        </p>
+        <p>Dop servis: <br />
+          <input type="checkbox" name="extras[]" value="upacovka" />podar upakovka<br />
+          <input type="checkbox" name="extras[]" value="katalog" />dostavka 
+          kataloga s zakazom
+
+        </p>
+      </p>
+    <p>Dostavka po address: <br />
+      Name: <input type="text" name="name" /> <br />
+      Address: <input type="text" name="address" /> <br />
+      City: <input type="text" name="city" /> <br />
+      State: <input type="text" name="state" /> <br />
+      Index: <input type="text" name="zip" /> <br />
+  
+    </p>
+    <p>Comments:<br />
+      <textarea name="comments" rows="10" cols="48"></textarea>
+
+    </p>
+    <p>
+      <input type="submit" value="Zakazat now" />
+    </p>
+    </form>
+
+  </body>
+</html>
+
